@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kesasako.hospitalsearch.HospitalDetailActivity"
+    android:weightSum="1">
+
+    <TextView android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:gravity="center|center_horizontal"
+        android:textStyle="bold"
+        android:textSize="40dp" />
+
+    <TextView android:id="@+id/tel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColorLink="#ffff4865"
+        android:textColor="#ffff4865" />
+
+    <TextView android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal"
+        android:textStyle="normal"
+        android:textSize="25dp" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:name="com.google.android.gms.maps.MapFragment"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        map:liteMode="true"
+        map:cameraZoom="13"
+        map:mapType="normal"
+        map:cameraTargetLat="-33.796923"
+        map:cameraTargetLng="150.922433"/>
+
+</LinearLayout>
